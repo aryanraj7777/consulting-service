@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us | Nexus Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Specific Styles for the About Page */
+        .page-header {
+            background-color: #e6f0ff;
+            padding: 4rem 0 2rem 0;
+            text-align: center;
+        }
+
+        .usp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 3rem;
+        }
+
+        .usp-card {
+            background: white;
+            padding: 2rem;
+            text-align: left;
+            border-left: 5px solid #ffd700;
+            box-shadow: 0 4px 12px rgba(0, 77, 153, 0.1);
+            border-radius: 5px;
+        }
+
+        .usp-card h4 {
+            color: #004d99;
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
+        }
+
+        .usp-card h5 {
+            color: #333;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .team-section {
+            background-color: #f0f0f0;
+        }
+
+        .team-section .container {
+            text-align: center;
+        }
+        
+        .team-member-placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: #004d99;
+            border-radius: 50%;
+            margin: 0 auto 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nexus Consulting</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">Why Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container animate-on-scroll fade-up">
+                <h2>The Nexus Difference: Strategy. Execution. Partnership.</h2>
+                <p class="large-text">In a crowded market, we stand out by providing the complete package. We don't just advise; we commit to your success from concept to cash flow.</p>
+            </div>
+        </section>
+
+        <section class="usp-focus">
+            <div class="container">
+                <h3 class="animate-on-scroll fade-up">Our Unique Value Proposition</h3>
+                <div class="usp-grid">
+                    
+                    <div class="usp-card animate-on-scroll zoom-in" style="animation-delay: 0.1s;">
+                        <h4>End-to-End Integrated Model</h4>
+                        <p>Stop managing separate IT providers, strategy consultants, and business developers. **We break down the walls between IT and the C-suite.** You receive one dedicated, accountable team focused on holistic, aligned business growth.</p>
+                        <h5>Result: Efficiency, Cohesion, Zero Misalignment.</h5>
+                    </div>
+
+                    <div class="usp-card animate-on-scroll zoom-in" style="animation-delay: 0.2s;">
+                        <h4>Obsession with Measurable ROI</h4>
+                        <p>We structure our engagements around tangible business metrics—not just hours billed. Whether it's a 30% reduction in cloud spend or a 2x increase in lead quality, **Your success is our only metric.** We translate strategy into measurable revenue growth.</p>
+                        <h5>Result: Guaranteed Value, Clear Accountability.</h5>
+                    </div>
+
+                    <div class="usp-card animate-on-scroll zoom-in" style="animation-delay: 0.3s;">
+                        <h4>Senior-Level Consulting Only</h4>
+                        <p>Every project at Nexus is led by a veteran consultant with 10+ years of both technical mastery and direct business P&L experience. **You get the A-team, not just junior developers.** Decisive action, informed by deep expertise, every time.</p>
+                        <h5>Result: Informed Decisions, Accelerated Implementation.</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <h3 class="animate-on-scroll fade-up">Meet the Leaders Driving Your Growth</h3>
+                <p class="animate-on-scroll fade-up">Our team blends technical engineering skill with aggressive business strategy.</p>
+                
+                <div class="solution-grid"> 
+                    <div class="animate-on-scroll zoom-in" style="animation-delay: 0.1s;">
+                        <div class="team-member-placeholder">JD</div>
+                        <h4>Jane Doe</h4>
+                        <p>Chief Strategy Officer (CSO)</p>
+                        <small>Focus: Digital Transformation & Market Strategy</small>
+                    </div>
+                    <div class="animate-on-scroll zoom-in" style="animation-delay: 0.2s;">
+                        <div class="team-member-placeholder">TS</div>
+                        <h4>Tom Smith</h4>
+                        <p>VP of Technology & Cloud Architecture</p>
+                        <small>Focus: Scalability, Security, and DevOps</small>
+                    </div>
+                    <div class="animate-on-scroll zoom-in" style="animation-delay: 0.3s;">
+                        <div class="team-member-placeholder">AA</div>
+                        <h4>Alex Adams</h4>
+                        <p>Head of Business Development</p>
+                        <small>Focus: Sales Enablement & Revenue Systems</small>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="cta-bottom">
+            <div class="container animate-on-scroll fade-up">
+                <h2>Ready to partner with a consultancy that guarantees alignment?</h2>
+                <a href="contact.html" class="btn primary-btn">Contact Our Leadership Team</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container animate-on-scroll fade-up">
+            <p>&copy; 2025 Nexus Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // JS for Scroll Animation Triggering
+        const checkVisibility = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            const windowHeight = window.innerHeight;
+
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                
+                if (elementTop < windowHeight * 0.8 && elementTop > -element.offsetHeight) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', checkVisibility);
+        window.addEventListener('load', checkVisibility);
+    </script>
+</body>
+</html>

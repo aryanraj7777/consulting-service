@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Overview | Nexus Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nexus Consulting</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">Why Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container animate-on-scroll fade-up">
+                <h2>Our Full-Spectrum Strategic Partnership</h2>
+                <p>We don't just fix tech problems; we build a future-proof foundation for your entire business across three synergistic pillars.</p>
+            </div>
+        </section>
+
+        <section id="tech">
+            <div class="container animate-on-scroll slide-left">
+                <h3>1. Technology & Infrastructure</h3>
+                <p>From cloud migration, cybersecurity, custom software development, and DevOps. We build the secure, scalable engine your business runs on. **We engineer resilience.**</p>
+                <ul>
+                    <li>Cloud Strategy & Migration (AWS, Azure, GCP)</li>
+                    <li>Cybersecurity Audits & Implementation</li>
+                    <li>Custom Software & Platform Development</li>
+                    <li>DevOps and Automation</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="planning" style="background-color: #f0f0f0;">
+            <div class="container animate-on-scroll fade-up">
+                <h3>2. Strategic Business Planning</h3>
+                <p>Comprehensive market analysis, digital transformation roadmaps, process optimization, and technology spend strategy. Turn complexity into clarity. **We define the 'Why'.**</p>
+                <ul>
+                    <li>Digital Transformation Roadmaps</li>
+                    <li>IT & Business Alignment Workshops</li>
+                    <li>Process Optimization (Lean IT)</li>
+                    <li>Market Entry Technology Strategy</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="dev">
+            <div class="container animate-on-scroll slide-left">
+                <h3>3. Business Development & Growth</h3>
+                <p>Leveraging technology for sales enablement, market penetration strategies, lead generation systems, and KPI definition. We translate strategy into revenue. **We are obsessed with measurable growth.**</p>
+                <ul>
+                    <li>Sales CRM Implementation & Optimization</li>
+                    <li>Lead Generation System Architecture</li>
+                    <li>KPI Definition and Performance Tracking</li>
+                    <li>Technology-Enabled Market Penetration</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cta-bottom">
+            <div class="container animate-on-scroll fade-up">
+                <h2>Ready to elevate your business?</h2>
+                <a href="contact.html" class="btn primary-btn">Start Your Project</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container animate-on-scroll fade-up">
+            <p>&copy; 2025 Nexus Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // JS for Scroll Animation Triggering
+        const checkVisibility = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            const windowHeight = window.innerHeight;
+
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                
+                if (elementTop < windowHeight * 0.8 && elementTop > -element.offsetHeight) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', checkVisibility);
+        window.addEventListener('load', checkVisibility);
+    </script>
+</body>
+</html>

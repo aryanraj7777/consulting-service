@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Consulting | End-to-End IT & Business Strategy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Nexus Consulting</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">Why Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Your Vision. Our Technology. Guaranteed Growth.</h2>
+                <p>We are the **end-to-end IT consultancy and strategic partner** for high-growth businesses seeking robust technology and decisive business planning.</p>
+                <a href="contact.html" class="btn primary-btn">Schedule Your Free Strategy Session</a>
+            </div>
+        </section>
+
+        <section class="problem-solution">
+            <div class="container animate-on-scroll fade-up">
+                <h3>Tired of Silos? Get Unified Results.</h3>
+                <p>Juggling separate firms for tech, strategy, and development wastes time and money. We unify IT services, business planning, and development into one seamless solution, ensuring complete alignment and maximizing ROI.</p>
+                <div class="solution-grid">
+                    <div class="animate-on-scroll zoom-in" style="animation-delay: 0.1s;">
+                        <h4>Strategy</h4>
+                        <p>Defining the 'Why' with clear market analysis and digital roadmaps.</p>
+                    </div>
+                    <div class="animate-on-scroll zoom-in" style="animation-delay: 0.2s;">
+                        <h4>Technology</h4>
+                        <p>Building scalable, secure, and resilient infrastructure and software.</p>
+                    </div>
+                    <div class="animate-on-scroll zoom-in" style="animation-delay: 0.3s;">
+                        <h4>Growth</h4>
+                        <p>Leveraging tech for sales enablement and measurable business development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="core-pillars">
+            <div class="container">
+                <h3 class="animate-on-scroll fade-up">Our Core Pillars of Success</h3>
+                <p class="animate-on-scroll fade-up">Click to explore how each pillar drives your business forward.</p>
+                <div class="pillar-links">
+                    <a href="services.html#tech" class="animate-on-scroll slide-left" style="animation-delay: 0.1s;">Technology & Infrastructure <span>(We engineer resilience)</span></a>
+                    <a href="services.html#planning" class="animate-on-scroll slide-left" style="animation-delay: 0.2s;">Strategic Business Planning <span>(We define clarity)</span></a>
+                    <a href="services.html#dev" class="animate-on-scroll slide-left" style="animation-delay: 0.3s;">Business Development & Growth <span>(We drive revenue)</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-bottom">
+            <div class="container animate-on-scroll fade-up">
+                <h2>Ready to stop managing vendors and start managing growth?</h2>
+                <a href="about.html" class="btn secondary-btn">Discover Our Unique Advantage</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container animate-on-scroll fade-up">
+            <p>&copy; 2025 Nexus Consulting. All rights reserved.</p>
+            <p>IT Strategy | Technology | Growth</p>
+        </div>
+    </footer>
+
+    <script>
+        // JS for Scroll Animation Triggering
+        const checkVisibility = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            const windowHeight = window.innerHeight;
+
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                
+                if (elementTop < windowHeight * 0.8 && elementTop > -element.offsetHeight) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', checkVisibility);
+        window.addEventListener('load', checkVisibility);
+    </script>
+</body>
+</html>
